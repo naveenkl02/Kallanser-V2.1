@@ -123,7 +123,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./Media/uploads/t
         if (!!message.mention && message.mention[0] == Config.TAGM) {
 await message.client.sendMessage(message.jid, fs.readFileSync('./Media/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 10, isForwarded: true }, quoted : message.data, ptt: true})
         }
-const array = ['Elsa','alive','Podi','song','Jihad','Poli']
+const array = ['aive','Podi','song','Jihad','Poli','adi','Adipoli','Admin','Ah','Alamb','ara','Alla','ano','Anthas','ariyamo','Arumille','Avasta','Ayin','ayn','Bgm','chiri','Boss','bot','bro','Da myre','da','Dance','dey','Di','Eda','Elsa','ElsaMwol','Enthada','Etha','Frnds','Feel','Free Fire','Friend']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
