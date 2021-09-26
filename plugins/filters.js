@@ -118,10 +118,10 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
         if (!!message.mention && message.mention[0] == '917736703116@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./Media/uploads/trance.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 10, isForwarded: true }, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('./Media/uploads/trance.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 10, isForwarded: false }, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.TAGM) {
-await message.client.sendMessage(message.jid, fs.readFileSync('./Media/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 10, isForwarded: true }, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('./Media/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 10, isForwarded: false }, quoted : message.data, ptt: true})
         }
 const array = ['aive','Podi','song','Jihad','Poli','adi','Adipoli','Admin','Ah','Alamb','ara','Alla','ano','Anthas','vayya','vazha','Vazhe','vedi','Venda','video','Vijay','You','vanno','Vala','Va da','Va','Umbi','Umma','time','Thyr','thug','Thund','tha','thanks','Story','Super','Song2','sticker','song','Song1','Single','Smile','sheri','Shahul','Sed','setta','really','Reels','Pycho','rasam','pubg','pwr','Poyi','pro','Potti','power','Poli','pottan','pokko','Pm','poda','Phaa','photo','para','Pattumo','over','owner','Ombi','one','Ok','okku','Oii','Ok bie','njn','Ntha','ninak','Nirthda','nanban','Nidhin','ariyamo','Arumille','Avasta','Ayin','ayn','Bgm','chiri','Boss','bot','bro','Da myre','da','Dance','dey','Di','Eda','Elsa','ElsaMwol','Enthada','Etha','Frnds','Feel','Frnds','good night','Good morning','group','Ha','Happy','Helo','help','Hi','hlo','Hoi','Hy','Istam','Ivan','jihad','Kali','Kalikkuno','Kando','kannappi','Kastam','Kaztro','King','koi','kundan','Kuttukaran','Left','love','life','Lub','Mandan','mathi','mention','menu','mess','message','mine','mone','Moodesh','movie','Myr','Myra','myre','Nanba','Name','Free Fire','Friend']
 array.map( async (a) => {
